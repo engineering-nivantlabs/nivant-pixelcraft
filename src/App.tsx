@@ -1,3 +1,4 @@
+import AdminDashboard from "./pages/AdminDashboard"
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -15,7 +16,8 @@ export default function App() {
         <Route path="/generate" element={<Generate />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/pricing" element={<Pricing />} />
-      </Routes>
+      <Route path="/admin" element={<AdminDashboard />} />
+          </Routes>
     </Layout>
   );
 }
